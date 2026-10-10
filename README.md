@@ -10,6 +10,10 @@ Five in-progress notebooks collect visual-computing experiments. The eventual pr
 4. [Texture synthesis](notebooks/texture-synthesis.ipynb): feature statistics and pixel optimization.
 5. [Neural implicit representation](notebooks/implicit-representation.ipynb): MLPs for image and short-sequence representation.
 
+## From-Scratch Context
+
+The original exercises restricted convenience APIs: `numpy.polyfit`, `numpy.linalg.solve`, scikit-learn's `linear_model` and `decomposition` modules, Torch's PCA/SVD helpers (`torch.pca_lowrank`, `torch.svd`, `torch.linalg.svd`), and OpenCV denoising functions. This explains the original “from scratch” constraint; it is not a claim that the experiments are complete.
+
 ## Data and Setup
 
 All image inputs are stored under `data/`. The denoising notebook reads its paired images and filtering examples locally; image retrieval uses the bundled query and database images. The texture reference image is local, and its regular pattern and the implicit-representation sequence are generated in their notebooks.
